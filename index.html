@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 
     <script src="https://kit.fontawesome.com/4112d06fd7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
@@ -13,7 +20,112 @@
 </head>
 
 <body>
-    
+    <header>
+        <div id="logo">
+            <div class="icn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="" title="Gmail">
+                <div id="log">
+                    <img src="/Gmail Clone/img/gmail_icon.png" alt="">
+                </div>
+                <div id="name">Gmail</div>
+            </a>
+        </div>
+        <div id="search">
+            <div class="icn1"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><input type="search" placeholder="Search mail" id="srh"></div>
+            <div class="icn1" id="filter"><i class="fa-solid fa-sliders"></i></div>
+        </div>
+        <div id="icon">
+            <div class="icn0"><i class="fa-solid fa-gear"></i></div>
+            <div class="icn0"><i class="fa-solid fa-ellipsis"></i></div>
+            <div id="acimg"><img src="img/account_image.jpg" alt=""></div>
+        </div>
+    </header>
+    <section id="mails">
+        <nav>
+            <div id="send">
+                <a href="" title="Mail">
+                    <div><i class="fa-solid fa-wand-magic"></i></div>
+                    <div>Compose</div>
+                </a>
+            </div>
+            <div id="options">
+                <a href="">
+                    <div class="cin3"><i class="fa-solid fa-inbox"></i></div>
+                    <div class="com">
+                        <div>Inbox</div>
+                        <div class="num">290</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cin3"><i class="fa-regular fa-star"></i></div>
+                    <div class="com">
+                        <div>Starred</div>
+                        <div class="num">14</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cin3"><i class="fa-regular fa-clock"></i></div>
+                    <div class="com">
+                        <div>Snoozed</div>
+                        <div class="num">56</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cin3"><i class="fa-regular fa-paper-plane"></i></div>
+                    <div class="com">
+                        <div>Sent</div>
+                        <div class="num">90</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cin3"><i class="fa-regular fa-file"></i></div>
+                    <div class="com">
+                        <div>Drafts</div>
+                        <div class="num">3</div>
+                    </div>
+                </a>
+                <a >
+                    <div class="cin3"><i class="fa-solid fa-angle-down"></i></div>
+                    <div class="com">
+                        <div>More</div>
+                    </div>
+                </a>
+                
+                <div id="tos">
+                    
+                <a href="" >
+                    <div class="cin3"><i class="fa-regular fa-message"></i></div>
+                    <div class="com">
+                        <div>Chats</div>
+                        <div class="num">56</div>
+                    </div>
+                </a>
+                <a href="" >
+                    <div class="cin3"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div class="com">
+                        <div>Spam</div>
+                        <div class="num">90</div>
+                    </div>
+                </a>
+                <a href="" >
+                    <div class="cin3"><i class="fa-regular fa-trash-can"></i></div>
+                    <div class="com">
+                        <div>Trash</div>
+                        <div class="num">3</div>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <div id="labl">
+                <div>Labels</div>
+                <div><i class="fa-solid fa-plus"></i></div>
+            </div>
+        </nav>
+        <div id="show"></div>
+    </section>
     <script src="js/index.js"></script>
 </body>
 
