@@ -100,18 +100,28 @@ for (let i = 0; i < 2; i++) {
     mail.appendChild(n1);
 }
 
-function tooltip(ele,str){
-    let ell=document.createElement("div");
-    ell.setAttribute("class","tip");
-    ell.innerHTML=str;
+function tooltip(ele, str) {
+    let ell = document.createElement("div");
+    ell.setAttribute("class", "tip");
+    ell.innerHTML = str;
     ele.appendChild(ell);
 }
 
 
-let ti=document.getElementsByClassName("starr");
-for(let i=0;i<ti.length;i++){
+let ti = document.getElementsByClassName("starr");
+for (let i = 0; i < ti.length; i++) {
 
-    tooltip(ti[i],"Starred");
+    tooltip(ti[i], "Not Starred");
+}
+let sec = ["Archive", "Delete", "Mark as read", "Snoozed"];
+let nav = document.getElementsByClassName("onopt");
+console.log(nav)
+for (let j = 0; j < nav.length; j++) {
+    for (let k = 0; k < nav[j].children.length; k++) {
+        tooltip(nav[j].children[k], sec[k]);
+        console.log(nav[j].children[k]);
+        
+    }
 }
 
 

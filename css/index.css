@@ -454,6 +454,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
 }
 .onopt>div:hover{
@@ -467,13 +468,18 @@ nav{
     left:0;
     background-color: black;
     color: white;
-    font-size: small;
+    font-size:10px;
     padding:3px;
     display: none;
+    white-space: nowrap;
 
 }
 .starr:hover .tip{
     display: block;
+}
+.onopt div:hover .tip{
+    display: block;
+
 }
 
 
