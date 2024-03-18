@@ -2,6 +2,10 @@
     --backGround: #f6f8fc;
     --buton:rgb(217, 226, 255);
 }
+@font-face {
+    font-family: Murecho;
+    src: url(../Murecho-VariableFont_wght.ttf);
+}
 
 * {
     /* border: 1px solid green; */
@@ -14,8 +18,7 @@ body {
     flex-wrap: nowrap;
     background-color: var(--backGround);
     margin: 0;
-    font-family:"Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    font-weight:100;
+    font-family:Murecho;
 
 }
 
@@ -173,11 +176,12 @@ header {
 }
 
 #mails {
-    height: 570px;
+    display: flex;
+    flex-direction: row;
 }
 
 nav{
-    width:250px;
+    width:300px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -194,10 +198,10 @@ nav{
     text-decoration: none;
     color:black;
     padding:15px;
-    margin-left:5px;
+    margin-left:10px;
     background-color: var(--buton);
 
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     transition: all 0.1s;
@@ -293,6 +297,8 @@ nav{
 #labl>div:last-child:hover{
     background-color: lightgrey;
 }
+
+
 #rel{
     display: flex;
     flex-direction: column;
@@ -300,3 +306,176 @@ nav{
 #non{
     display: none;
 }
+
+#show{
+    border-radius: 15px;
+    width: 95%;
+    margin:15px 10px;
+    background-color: white;
+}
+
+#head{
+    display: flex;
+    flex-direction: row;
+}
+
+#select{
+    border:1px solid blue;
+}
+
+
+#select>i{
+    padding:5px;
+    margin:1px;
+}
+
+
+
+#_mails{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#catg{
+    display: flex;
+    flex-direction: row;
+}
+
+.cat1{
+    display: flex;
+    flex-direction: row;
+    padding:15px 20px;
+    width:200px;
+    cursor: pointer;
+
+
+}
+.cat1:hover{
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.titl{
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.but>div{
+    padding:2px 3px;
+    background-color: green;
+    color:white;
+    border-radius: 6px;
+    font-size: x-small;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}   
+.but{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#maills{
+    margin-top: 5px;
+    height:450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.mal1{
+
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    
+    border:2px inset white;
+   max-height: 50px;
+   
+   cursor: pointer;
+}
+.mal1>div{
+    padding:10px;
+
+}
+.mal1>div:last-child{
+    padding:7px;
+
+}
+
+.mal1:hover{
+    border:2px inset grey;
+
+}
+.mal1:hover .onopt{
+    display: flex;
+}
+.from{
+    font-weight: bold;
+    width: 150px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.inselect>div{
+    width:100%;
+    height: 100%;
+    border:2px solid black;
+}
+.starr{
+    border-radius: 50%;
+
+}
+.starr:hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+.date{
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.onopt{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+}
+.onopt>div{
+    padding:5px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.onopt>div:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+
+.tip{
+    position: absolute;
+    top: 100%;
+    left:0;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding:3px;
+    display: none;
+
+}
+.starr:hover .tip{
+    display: block;
+}
+
+
+
+
